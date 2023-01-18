@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tema3HTML</title>
+    </head>
+
+    <body>
+        <h1>Planets</h1>
+
+    <table id="tabel" border="1">
+        <thead>
+          <tr>
+            <td colspan="2"></td>
+            <th scope="col">Name</th>
+            <th scope="col">Mass (10<sup>24</sup>kg)</th>
+            <th scope="col">Diameter (km)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+            <th scope="row">Mercury</th>
+            <td>0.330</td>
+            <td>4,879</td>
+          </tr>
+          <tr>
+            <th scope="row">Venus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+          </tr>
+          <tr>
+            <th scope="row">Earth</th>
+            <td>5.97</td>
+            <td>12,756</td>
+          </tr>
+          <tr>
+            <th scope="row">Mars</th>
+            <td>0.642</td>
+            <td>6,792</td>
+          </tr>
+          <tr>
+            <th rowspan="4" scope="rowgroup">Jovian planets</th>
+            <th rowspan="2" scope="rowgroup">Gas giants</th>
+            <th scope="row">Jupiter</th>
+            <td>1898</td>
+            <td>142,984</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturn</th>
+            <td>568</td>
+            <td>120,536</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Ice giants</th>
+            <th scope="row">Uranus</th>
+            <td>86.8</td>
+            <td>51,118</td>
+          </tr>
+          <tr>
+            <th scope="row">Neptune</th>
+            <td>102</td>
+            <td>49,528</td>
+          </tr>
+          <tr>
+            <th colspan="2" scope="row">Dwarf planets</th>
+            <th scope="row">Pluto</th>
+            <td>0.0146</td>
+            <td>2,370</td>
+          </tr>
+        </tbody>
+      </table>
+
+       <fieldset>
+            <legend>Choose your favorite planet</legend>
+            <br>
+            <div>
+                <label for="nume">Full Name: </label>
+                <input type="text" id="nume">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email">
+            </div>
+    
+            <p>Favorite planet: </p>
+            <div>
+                <input type="radio" id="mercury" name="fav_planet" value="mercury">
+                <label for="mercury">Mercury</label><br>
+            </div>
+            <div>
+                <input type="radio" id="venus" name="fav_planet" value="venus">
+                <label for="venus">Venus</label><br>
+            </div>
+            <div>
+                <input type="radio" id="earth" name="fav_planet" value="earth">
+                <label for="earth">Earth</label><br>
+            </div>
+            <div>
+                <input type="radio" id="mars" name="fav_planet" value="mars">
+                <label for="mars">Mars</label><br>
+            </div>
+            <div>
+                <input type="radio" id="jupiter" name="fav_planet" value="jupiter">
+                <label for="jupiter">Jupiter</label><br>
+            </div>
+            <div>
+                <input type="radio" id="saturn" name="fav_planet" value="saturn">
+                <label for="saturn">Saturn</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uranus" name="fav_planet" value="uranus">
+                <label for="uranus">Uranus</label><br>
+            </div>
+            <div>
+                <input type="radio" id="neptune" name="fav_planet" value="neptune">
+                <label for="neptune">Neptune</label><br>
+            </div>
+            <div>
+                <input type="radio" id="pluto" name="fav_planet" value="pluto">
+                <label for="pluto">Pluto</label><br>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" checked>
+                <label for="terms">I agree to the <a href="http://google.com">terms and conditions</a></label>
+            </div>
+
+            <button type="button">Reset</button>
+            <button type="button" onclick="alert('꩜')">Ask away</button>
+        </fieldset> 
+    </body>
+</html>
